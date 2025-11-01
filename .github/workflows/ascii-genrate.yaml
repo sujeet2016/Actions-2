@@ -25,7 +25,7 @@ jobs:
         - name: sleep 10 sec
           run: sleep 10
         - name: Test_file_exists
-          run: grep -i "dragon"
+          run: grep -i "dragon" dragon.txt
 
     deploy_job_3:
         needs: test_job_2
