@@ -35,7 +35,7 @@ jobs:
           uses: actions/download-artifact@v4
           with:
             name: dragon-file
-            path: dragon.txt
+            path: .
         
         - name: Test_file_exists
           run: grep -i "dragon" dragon.txt
@@ -49,7 +49,7 @@ jobs:
           uses: actions/download-artifact@v4
           with:
             name: dragon-file
-            path: dragon.txt
+            path: .
         - name: Read-file
           run: cat dragon.txt
 
