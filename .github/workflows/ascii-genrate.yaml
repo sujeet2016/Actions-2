@@ -1,0 +1,19 @@
+name: Generate ASCII Artwork
+on: push
+
+jobs:
+    build_job_1:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Install CowSay prograam
+          run: sudo apt-get install cowsay -y
+
+        - name: Execute Cowsay CMD
+          run: cowsay -f dragon "Run for cover........", I am a dragon >> dragon.txt "
+
+        - name: Sleep for 30 seconds
+          run: sleep 30
+        - name : check file
+          run:  ls -ltra
+    
+    
